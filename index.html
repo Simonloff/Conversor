@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>Conversor de Unidades</h1>
+</div>
+
+<div class="container">
+    <!-- Sección de Conversión de Pesos -->
+    <div class="conversion-box">
+        <h3>Conversión de Pesos</h3>
+        <div class="input-group">
+            <input type="number" id="pesoValue" placeholder="Ingrese un valor" />
+            <select id="fromPeso">
+                <option value="kilogram">Kilogramo</option>
+                <option value="gram">Gramo</option>
+                <option value="shortTon">Short Ton</option>
+                <option value="longTon">Long Ton</option>
+                <option value="pound">Libra</option>
+                <option value="ounce">Onza</option>
+                <option value="dram">Dram</option>
+                <option value="grain">Grano</option>
+                <option value="stone">Stone</option>
+            </select>
+            a
+            <select id="toPeso">
+                <option value="kilogram">Kilogramo</option>
+                <option value="gram">Gramo</option>
+                <option value="shortTon">Short Ton</option>
+                <option value="longTon">Long Ton</option>
+                <option value="pound">Libra</option>
+                <option value="ounce">Onza</option>
+                <option value="dram">Dram</option>
+                <option value="grain">Grano</option>
+                <option value="stone">Stone</option>
+            </select>
+        </div>
+        <button onclick="convertPeso()">Convertir</button>
+        <h3 id="pesoResult"></h3>
+    </div>
+
+    <!-- Sección de Conversión de Líquidos -->
+    <div class="conversion-box">
+        <h3>Conversión de Líquidos</h3>
+        <div class="input-group">
+            <input type="number" id="liquidoValue" placeholder="Ingrese un valor" />
+            <select id="fromLiquido">
+                <option value="litro">Litro</option>
+                <option value="milliliter">Mililitro</option>
+                <option value="gallon">Galón</option>
+                <option value="quart">Cuarto (Quart)</option>
+                <option value="pint">Pinta</option>
+                <option value="gill">Gill</option>
+                <option value="fluidOunce">Onza líquida</option>
+                <option value="fluidDram">Dram líquido</option>
+                <option value="minim">Minim</option>
+            </select>
+            a
+            <select id="toLiquido">
+                <option value="litro">Litro</option>
+                <option value="milliliter">Mililitro</option>
+                <option value="gallon">Galón</option>
+                <option value="quart">Cuarto (Quart)</option>
+                <option value="pint">Pinta</option>
+                <option value="gill">Gill</option>
+                <option value="fluidOunce">Onza líquida</option>
+                <option value="fluidDram">Dram líquido</option>
+                <option value="minim">Minim</option>
+            </select>
+        </div>
+        <button onclick="convertLiquido()">Convertir</button>
+        <h3 id="liquidoResult"></h3>
+    </div>
+
+    <!-- Sección de Conversión de Distancias -->
+    <div class="conversion-box">
+        <h3>Conversión de Distancias</h3>
+        <div class="input-group">
+            <input type="number" id="distanciaValue" placeholder="Ingrese un valor" />
+            <select id="fromDistancia">
+                <option value="meter">Metro</option>
+                <option value="kilometer">Kilómetro</option>
+                <option value="nauticalMile">Milla náutica</option>
+                <option value="mile">Milla</option>
+                <option value="furLong">Furlong</option>
+                <option value="rod">Rod</option>
+                <option value="fathom">Fathom</option>
+                <option value="yard">Yarda</option>
+                <option value="foot">Pie</option>
+                <option value="inch">Pulgada</option>
+            </select>
+            a
+            <select id="toDistancia">
+                <option value="meter">Metro</option>
+                <option value="kilometer">Kilómetro</option>
+                <option value="nauticalMile">Milla náutica</option>
+                <option value="mile">Milla</option>
+                <option value="furLong">Furlong</option>
+                <option value="rod">Rod</option>
+                <option value="fathom">Fathom</option>
+                <option value="yard">Yarda</option>
+                <option value="foot">Pie</option>
+                <option value="inch">Pulgada</option>
+            </select>
+        </div>
+        <button onclick="convertDistancia()">Convertir</button>
+        <h3 id="distanciaResult"></h3>
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2024 Conversor de Unidades. Todos los derechos reservados.</p>
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
